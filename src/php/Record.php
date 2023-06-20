@@ -4,7 +4,7 @@ namespace abslog;
 /**
  * Record in log
  */
-class Record {
+class Record implements \Stringable {
 	/**
 	 * Level: ERROR
 	 */
@@ -79,5 +79,9 @@ class Record {
 	
 	public static function Debug( string $message ) : Record {
 		return new static( $message, self::LVL_DEBUG );
+	}
+	
+	public function __toString( ) : string {
+		return '['.self::LevelToString( $this->level ).'] '.$this->message;
 	}
 }
