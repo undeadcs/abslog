@@ -6,7 +6,7 @@ namespace abslog;
  *
  * descriptor is not captured by instance of this class, close it on your own
  */
-class DescriptorLog implements Log {
+class DescriptorLog extends TextualLog implements Log {
 	/**
 	 * @var mixed Descriptor to write to
 	 */
@@ -24,6 +24,6 @@ class DescriptorLog implements Log {
 	 * Write record to log
 	 */
 	public function Write( Record $record ) : void {
-		fwrite( $this->fd, '['.Record::LevelToString( $record->GetLevel( ) ).'] '.$record->GetMessage( )."\n" );
+		fwrite( $this->fd, $this->RecordToString( $record ) );
 	}
 }

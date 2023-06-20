@@ -4,7 +4,7 @@ namespace abslog;
 /**
  * Logging to file by name
  */
-class FileLog implements Log {
+class FileLog extends TextualLog implements Log {
 	/**
 	 * @var string Full file path
 	 */
@@ -17,11 +17,11 @@ class FileLog implements Log {
 	public function GetFilename( ) : string {
 		return $this->filename;
 	}
-
+	
 	/**
 	 * Write record to log
 	 */
 	public function Write( Record $record ) : void {
-		file_put_contents( $this->filename, '['.Record::LevelToString( $record->GetLevel( ) ).'] '.$record->GetMessage( )."\n", FILE_APPEND );
+		file_put_contents( $this->filename, $this->RecordToString( $record ), FILE_APPEND );
 	}
 }

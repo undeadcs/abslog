@@ -29,4 +29,21 @@ class RecordTests extends TestCase {
 		$this->assertEquals( $level, $actual->GetLevel( ) );
 		$this->assertEquals( new Record( $message, $level ), $actual );
 	}
+	
+	public static function toStringProvider( ) : array {
+		return [
+			[ 'error message',		Record::LVL_ERROR,		'[ERROR] error message'		],
+			[ 'warning message',	Record::LVL_WARNING,	'[WARNING] warning message'	],
+			[ 'info message',		Record::LVL_INFO,		'[INFO] info message'		],
+			[ 'debug message',		Record::LVL_DEBUG,		'[DEBUG] debug message'		]
+		];
+	}
+	
+	/**
+	 * Testing convert to string
+	 */
+	#[ DataProvider( 'toStringProvider' ) ]
+	public function testToString( string $message, int $level, string $expected ) : void {
+		$this->assertEquals( $expected, ( string ) new Record( $message, $level ) );
+	}
 }
