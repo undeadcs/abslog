@@ -1,0 +1,9 @@
+<map id="abslog\Log" name="abslog\Log">
+<area shape="rect" id="node1" title="Abstract interface of log." alt="" coords="5,107,97,133"/>
+<area shape="rect" id="node2" href="$classabslog_1_1logs_1_1DescriptorLog.html" title="Logging to descriptor." alt="" coords="145,31,336,57"/>
+<area shape="rect" id="node5" href="$classabslog_1_1logs_1_1FileLog.html" title="Logging to file by name." alt="" coords="167,81,314,108"/>
+<area shape="rect" id="node6" href="$classabslog_1_1logs_1_1MultiLog.html" title="Logging to multiple logs." alt="" coords="163,132,319,159"/>
+<area shape="rect" id="node7" href="$classabslog_1_1logs_1_1NullLog.html" title="Logging nowhere." alt="" coords="166,183,315,209"/>
+<area shape="rect" id="node3" href="$classabslog_1_1logs_1_1StderrLog.html" title="Logging to STDERR." alt="" coords="385,5,548,32"/>
+<area shape="rect" id="node4" href="$classabslog_1_1logs_1_1StdoutLog.html" title="Logging to STDOUT." alt="" coords="384,56,549,83"/>
+</map>
