@@ -1,0 +1,4 @@
+<map id="abslog\logs\MultiLog" name="abslog\logs\MultiLog">
+<area shape="rect" id="node1" title="Logging to multiple logs." alt="" coords="5,80,161,107"/>
+<area shape="rect" id="node2" href="$interfaceabslog_1_1Log.html" title="Abstract interface of log." alt="" coords="37,5,129,32"/>
+</map>
