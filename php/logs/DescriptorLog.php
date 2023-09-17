@@ -11,15 +11,23 @@ use abslog\Record;
  */
 class DescriptorLog extends TextualLog implements Log {
 	/**
-	 * @var mixed Descriptor to write to
+	 * Descriptor to write to
 	 */
 	protected $fd = null;
 
+	/**
+	 * Constructor
+	 * 
+	 * @param mixed $fd Descriptor to write to
+	 */
 	public function __construct( $fd ) {
 		$this->fd = $fd;
 	}
 
-	public function GetDescriptor( ) {
+	/**
+	 * Get descriptor
+	 */
+	public function GetDescriptor( ) : mixed {
 		return $this->fd;
 	}
 

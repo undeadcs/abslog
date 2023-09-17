@@ -9,20 +9,28 @@ use abslog\Record;
  */
 class MultiLog implements Log {
 	/**
-	 * @var array Array for logs to log to
+	 * Logs to log to
 	 */
 	protected array $logs = [ ];
 
+	/**
+	 * Constructor
+	 * 
+	 * @param Log $logs Logs to log to
+	 */
 	public function __construct( Log ...$logs ) {
 		$this->logs = $logs;
 	}
 
+	/**
+	 * Get logs
+	 */
 	public function GetLogs( ) : array {
 		return $this->logs;
 	}
 
 	/**
-	 * Add log to array
+	 * Add log
 	 */
 	public function AddLog( Log $log ) : MultiLog {
 		$this->logs[ ] = $log;

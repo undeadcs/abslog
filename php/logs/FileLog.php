@@ -9,14 +9,22 @@ use abslog\Record;
  */
 class FileLog extends TextualLog implements Log {
 	/**
-	 * @var string Full file path
+	 * Full file path
 	 */
 	protected string $filename = '';
 
+	/**
+	 * Constructor
+	 * 
+	 * @param string $filename Full file path
+	 */
 	public function __construct( string $filename ) {
 		$this->filename = $filename;
 	}
 
+	/**
+	 * Get file path
+	 */
 	public function GetFilename( ) : string {
 		return $this->filename;
 	}
