@@ -1,5 +1,7 @@
 <?php
-namespace abslog;
+namespace abslog\logs;
+
+use abslog\Record;
 
 /**
  * Log with records converted to text

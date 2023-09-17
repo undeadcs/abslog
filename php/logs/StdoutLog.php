@@ -1,5 +1,5 @@
 <?php
-namespace abslog;
+namespace abslog\logs;
 
 /**
  * Logging to STDOUT

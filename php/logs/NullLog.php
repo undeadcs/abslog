@@ -1,5 +1,8 @@
 <?php
-namespace abslog;
+namespace abslog\logs;
+
+use abslog\Log;
+use abslog\Record;
 
 /**
  * Logging nowhere

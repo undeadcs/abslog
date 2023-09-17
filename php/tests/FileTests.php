@@ -4,9 +4,9 @@ namespace abslog\tests;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 use abslog\Record;
-use abslog\FileLog;
-use abslog\DescriptorLog;
-use abslog\MultiLog;
+use abslog\logs\FileLog;
+use abslog\logs\DescriptorLog;
+use abslog\logs\MultiLog;
 
 /**
  * Testing file logs
