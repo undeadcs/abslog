@@ -70,7 +70,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classabslog_1_1Record-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">abslog\Record Class Reference</div></div>
 </div><!--header-->
@@ -102,12 +101,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a100005c85774cc1aeb18b2a39a818d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a100005c85774cc1aeb18b2a39a818d28">__construct</a> (string $message, int $level=self::LVL_INFO)</td></tr>
 <tr class="memdesc:a100005c85774cc1aeb18b2a39a818d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classabslog_1_1Record.html#a100005c85774cc1aeb18b2a39a818d28">More...</a><br /></td></tr>
 <tr class="separator:a100005c85774cc1aeb18b2a39a818d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f01b5b0a3e919cc9e1543fa39f70638"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a4f01b5b0a3e919cc9e1543fa39f70638">GetLevel</a> ()</td></tr>
-<tr class="memdesc:a4f01b5b0a3e919cc9e1543fa39f70638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get level of record.  <a href="classabslog_1_1Record.html#a4f01b5b0a3e919cc9e1543fa39f70638">More...</a><br /></td></tr>
-<tr class="separator:a4f01b5b0a3e919cc9e1543fa39f70638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba895395490d72210471259f88478d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#acba895395490d72210471259f88478d5">GetMessage</a> ()</td></tr>
-<tr class="memdesc:acba895395490d72210471259f88478d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get message of record.  <a href="classabslog_1_1Record.html#acba895395490d72210471259f88478d5">More...</a><br /></td></tr>
-<tr class="separator:acba895395490d72210471259f88478d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a76d6b61907a9a5847d355dbb88264e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a9a76d6b61907a9a5847d355dbb88264e">__toString</a> ()</td></tr>
 <tr class="memdesc:a9a76d6b61907a9a5847d355dbb88264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic method for casting to string.  <a href="classabslog_1_1Record.html#a9a76d6b61907a9a5847d355dbb88264e">More...</a><br /></td></tr>
 <tr class="separator:a9a76d6b61907a9a5847d355dbb88264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,18 +110,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a91fb694598bd7c7d60c728f9d652a2bf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a91fb694598bd7c7d60c728f9d652a2bf">LevelToString</a> (int $level)</td></tr>
 <tr class="memdesc:a91fb694598bd7c7d60c728f9d652a2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer level value to string.  <a href="classabslog_1_1Record.html#a91fb694598bd7c7d60c728f9d652a2bf">More...</a><br /></td></tr>
 <tr class="separator:a91fb694598bd7c7d60c728f9d652a2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af381a7df622e8d00dcd3f0ed58c436b8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#af381a7df622e8d00dcd3f0ed58c436b8">Error</a> (string $message)</td></tr>
-<tr class="memdesc:af381a7df622e8d00dcd3f0ed58c436b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create error record.  <a href="classabslog_1_1Record.html#af381a7df622e8d00dcd3f0ed58c436b8">More...</a><br /></td></tr>
-<tr class="separator:af381a7df622e8d00dcd3f0ed58c436b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79406debf209999edb0f9625be50eb7a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a79406debf209999edb0f9625be50eb7a">Warning</a> (string $message)</td></tr>
-<tr class="memdesc:a79406debf209999edb0f9625be50eb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create warning record.  <a href="classabslog_1_1Record.html#a79406debf209999edb0f9625be50eb7a">More...</a><br /></td></tr>
-<tr class="separator:a79406debf209999edb0f9625be50eb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49b124a4cf5327fd9ed0f2cac9ab55e6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a49b124a4cf5327fd9ed0f2cac9ab55e6">Info</a> (string $message)</td></tr>
-<tr class="memdesc:a49b124a4cf5327fd9ed0f2cac9ab55e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create info record.  <a href="classabslog_1_1Record.html#a49b124a4cf5327fd9ed0f2cac9ab55e6">More...</a><br /></td></tr>
-<tr class="separator:a49b124a4cf5327fd9ed0f2cac9ab55e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8974d3f5ff5cd74c4cdd3444c2079e24"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a8974d3f5ff5cd74c4cdd3444c2079e24">Debug</a> (string $message)</td></tr>
-<tr class="memdesc:a8974d3f5ff5cd74c4cdd3444c2079e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create debug record.  <a href="classabslog_1_1Record.html#a8974d3f5ff5cd74c4cdd3444c2079e24">More...</a><br /></td></tr>
-<tr class="separator:a8974d3f5ff5cd74c4cdd3444c2079e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a11969d75beb842b4f950dc88a4dfca"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a9a11969d75beb842b4f950dc88a4dfca">Error</a> (string $message,... $extra)</td></tr>
+<tr class="memdesc:a9a11969d75beb842b4f950dc88a4dfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create error record.  <a href="classabslog_1_1Record.html#a9a11969d75beb842b4f950dc88a4dfca">More...</a><br /></td></tr>
+<tr class="separator:a9a11969d75beb842b4f950dc88a4dfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4daefe5fba20bec096ce50bb6ffeef6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#ad4daefe5fba20bec096ce50bb6ffeef6">Warning</a> (string $message,... $extra)</td></tr>
+<tr class="memdesc:ad4daefe5fba20bec096ce50bb6ffeef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create warning record.  <a href="classabslog_1_1Record.html#ad4daefe5fba20bec096ce50bb6ffeef6">More...</a><br /></td></tr>
+<tr class="separator:ad4daefe5fba20bec096ce50bb6ffeef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4be365c23ffa64f2e0577b77db1a1d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#aef4be365c23ffa64f2e0577b77db1a1d">Info</a> (string $message,... $extra)</td></tr>
+<tr class="memdesc:aef4be365c23ffa64f2e0577b77db1a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create info record.  <a href="classabslog_1_1Record.html#aef4be365c23ffa64f2e0577b77db1a1d">More...</a><br /></td></tr>
+<tr class="separator:aef4be365c23ffa64f2e0577b77db1a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b118696977b6cf12a68d39b958349a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#ad2b118696977b6cf12a68d39b958349a">Debug</a> (string $message,... $extra)</td></tr>
+<tr class="memdesc:ad2b118696977b6cf12a68d39b958349a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create debug record.  <a href="classabslog_1_1Record.html#ad2b118696977b6cf12a68d39b958349a">More...</a><br /></td></tr>
+<tr class="separator:ad2b118696977b6cf12a68d39b958349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -144,9 +137,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0d3c8858ccb92ae5764a70fb210ad1ff"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a0d3c8858ccb92ae5764a70fb210ad1ff">LVL_DEBUG</a> = 3</td></tr>
 <tr class="memdesc:a0d3c8858ccb92ae5764a70fb210ad1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level: DEBUG.  <a href="classabslog_1_1Record.html#a0d3c8858ccb92ae5764a70fb210ad1ff">More...</a><br /></td></tr>
 <tr class="separator:a0d3c8858ccb92ae5764a70fb210ad1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
 <tr class="memitem:a6768b050db05b630dc1b41e478c91492"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a6768b050db05b630dc1b41e478c91492">$level</a> = self::LVL_INFO</td></tr>
 <tr class="memdesc:a6768b050db05b630dc1b41e478c91492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level.  <a href="classabslog_1_1Record.html#a6768b050db05b630dc1b41e478c91492">More...</a><br /></td></tr>
 <tr class="separator:a6768b050db05b630dc1b41e478c91492"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +146,6 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classabslog_1_1Record.html" title="Record in log.">Record</a> in log. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>make it struct for extendable case </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a100005c85774cc1aeb18b2a39a818d28" name="a100005c85774cc1aeb18b2a39a818d28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a100005c85774cc1aeb18b2a39a818d28">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -215,8 +204,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8974d3f5ff5cd74c4cdd3444c2079e24" name="a8974d3f5ff5cd74c4cdd3444c2079e24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8974d3f5ff5cd74c4cdd3444c2079e24">&#9670;&nbsp;</a></span>Debug()</h2>
+<a id="ad2b118696977b6cf12a68d39b958349a" name="ad2b118696977b6cf12a68d39b958349a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b118696977b6cf12a68d39b958349a">&#9670;&nbsp;</a></span>Debug()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,8 +217,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">static abslog\Record::Debug </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td class="paramname"><em>$message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$extra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -243,8 +242,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af381a7df622e8d00dcd3f0ed58c436b8" name="af381a7df622e8d00dcd3f0ed58c436b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af381a7df622e8d00dcd3f0ed58c436b8">&#9670;&nbsp;</a></span>Error()</h2>
+<a id="a9a11969d75beb842b4f950dc88a4dfca" name="a9a11969d75beb842b4f950dc88a4dfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a11969d75beb842b4f950dc88a4dfca">&#9670;&nbsp;</a></span>Error()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,8 +255,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">static abslog\Record::Error </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td class="paramname"><em>$message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$extra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -271,46 +280,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f01b5b0a3e919cc9e1543fa39f70638" name="a4f01b5b0a3e919cc9e1543fa39f70638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f01b5b0a3e919cc9e1543fa39f70638">&#9670;&nbsp;</a></span>GetLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">abslog\Record::GetLevel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get level of record. </p>
-
-</div>
-</div>
-<a id="acba895395490d72210471259f88478d5" name="acba895395490d72210471259f88478d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acba895395490d72210471259f88478d5">&#9670;&nbsp;</a></span>GetMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">abslog\Record::GetMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get message of record. </p>
-
-</div>
-</div>
-<a id="a49b124a4cf5327fd9ed0f2cac9ab55e6" name="a49b124a4cf5327fd9ed0f2cac9ab55e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49b124a4cf5327fd9ed0f2cac9ab55e6">&#9670;&nbsp;</a></span>Info()</h2>
+<a id="aef4be365c23ffa64f2e0577b77db1a1d" name="aef4be365c23ffa64f2e0577b77db1a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4be365c23ffa64f2e0577b77db1a1d">&#9670;&nbsp;</a></span>Info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,8 +293,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">static abslog\Record::Info </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td class="paramname"><em>$message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$extra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -365,8 +346,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a79406debf209999edb0f9625be50eb7a" name="a79406debf209999edb0f9625be50eb7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79406debf209999edb0f9625be50eb7a">&#9670;&nbsp;</a></span>Warning()</h2>
+<a id="ad4daefe5fba20bec096ce50bb6ffeef6" name="ad4daefe5fba20bec096ce50bb6ffeef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4daefe5fba20bec096ce50bb6ffeef6">&#9670;&nbsp;</a></span>Warning()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,8 +359,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">static abslog\Record::Warning </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$message</em></td><td>)</td>
+          <td class="paramname"><em>$message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$extra</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -399,19 +390,11 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int abslog\Record::$level = self::LVL_INFO</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Level. </p>
@@ -423,19 +406,11 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string abslog\Record::$message = ''</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Message. </p>
