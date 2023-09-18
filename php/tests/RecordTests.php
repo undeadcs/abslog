@@ -25,8 +25,8 @@ class RecordTests extends TestCase {
 	public function testValues( string $message, int $level, string $fn ) : void {
 		$actual = Record::$fn( $message );
 		
-		$this->assertEquals( $message, $actual->GetMessage( ) );
-		$this->assertEquals( $level, $actual->GetLevel( ) );
+		$this->assertEquals( $message, $actual->message );
+		$this->assertEquals( $level, $actual->level );
 		$this->assertEquals( new Record( $message, $level ), $actual );
 	}
 	

@@ -3,8 +3,6 @@ namespace abslog;
 
 /**
  * Record in log
- * 
- * @todo make it struct for extendable case
  */
 class Record implements \Stringable {
 	/**
@@ -30,12 +28,12 @@ class Record implements \Stringable {
 	/**
 	 * Level
 	 */
-	protected int $level = self::LVL_INFO;
+	public int $level = self::LVL_INFO;
 
 	/**
 	 * Message
 	 */
-	protected string $message = '';
+	public string $message = '';
 
 	/**
 	 * Constructor
@@ -46,20 +44,6 @@ class Record implements \Stringable {
 	public function __construct( string $message, int $level = self::LVL_INFO ) {
 		$this->message	= $message;
 		$this->level	= $level;
-	}
-
-	/**
-	 * Get level of record
-	 */
-	public function GetLevel( ) : int {
-		return $this->level;
-	}
-
-	/**
-	 * Get message of record
-	 */
-	public function GetMessage( ) : string {
-		return $this->message;
 	}
 
 	/**
@@ -79,29 +63,29 @@ class Record implements \Stringable {
 	/**
 	 * Create error record
 	 */
-	public static function Error( string $message ) : Record {
-		return new static( $message, self::LVL_ERROR );
+	public static function Error( string $message, ...$extra ) : Record {
+		return new static( $message, self::LVL_ERROR, ...$extra );
 	}
 	
 	/**
 	 * Create warning record
 	 */
-	public static function Warning( string $message ) : Record {
-		return new static( $message, self::LVL_WARNING );
+	public static function Warning( string $message, ...$extra ) : Record {
+		return new static( $message, self::LVL_WARNING, ...$extra );
 	}
 	
 	/**
 	 * Create info record
 	 */
-	public static function Info( string $message ) : Record {
-		return new static( $message, self::LVL_INFO );
+	public static function Info( string $message, ...$extra ) : Record {
+		return new static( $message, self::LVL_INFO, ...$extra );
 	}
 	
 	/**
 	 * Create debug record
 	 */
-	public static function Debug( string $message ) : Record {
-		return new static( $message, self::LVL_DEBUG );
+	public static function Debug( string $message, ...$extra ) : Record {
+		return new static( $message, self::LVL_DEBUG, ...$extra );
 	}
 	
 	/**

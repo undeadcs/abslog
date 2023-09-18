@@ -6,6 +6,7 @@
         <testsuite name="unit">
             <file>RecordTests.php</file>
             <file>FileTests.php</file>
+            <file>ExtendingTests.php</file>
         </testsuite>
     </testsuites>
 </phpunit>
