@@ -34,16 +34,23 @@ class Record implements \Stringable {
 	 * Message
 	 */
 	public string $message = '';
+	
+	/**
+	 * Time of creation
+	 */
+	public ?\DateTime $time = null;
 
 	/**
 	 * Constructor
 	 * 
 	 * @param string $message Message
 	 * @param int $level Level
+	 * @param \DateTime $time Time of creation
 	 */
-	public function __construct( string $message, int $level = self::LVL_INFO ) {
+	public function __construct( string $message, int $level = self::LVL_INFO, \DateTime $time = new \DateTime ) {
 		$this->message	= $message;
 		$this->level	= $level;
+		$this->time		= $time;
 	}
 
 	/**
@@ -64,34 +71,34 @@ class Record implements \Stringable {
 	 * Create error record
 	 */
 	public static function Error( string $message, ...$extra ) : Record {
-		return new static( $message, self::LVL_ERROR, ...$extra );
+		return new static( $message, self::LVL_ERROR, new \DateTime, ...$extra );
 	}
 	
 	/**
 	 * Create warning record
 	 */
 	public static function Warning( string $message, ...$extra ) : Record {
-		return new static( $message, self::LVL_WARNING, ...$extra );
+		return new static( $message, self::LVL_WARNING, new \DateTime, ...$extra );
 	}
 	
 	/**
 	 * Create info record
 	 */
 	public static function Info( string $message, ...$extra ) : Record {
-		return new static( $message, self::LVL_INFO, ...$extra );
+		return new static( $message, self::LVL_INFO, new \DateTime, ...$extra );
 	}
 	
 	/**
 	 * Create debug record
 	 */
 	public static function Debug( string $message, ...$extra ) : Record {
-		return new static( $message, self::LVL_DEBUG, ...$extra );
+		return new static( $message, self::LVL_DEBUG, new \DateTime, ...$extra );
 	}
 	
 	/**
 	 * Magic method for casting to string
 	 */
 	public function __toString( ) : string {
-		return '['.self::LevelToString( $this->level ).'] '.$this->message;
+		return '['.$this->time->format( 'c' ).']['.self::LevelToString( $this->level ).'] '.$this->message;
 	}
 }
