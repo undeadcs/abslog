@@ -27,15 +27,18 @@ class RecordTests extends TestCase {
 		
 		$this->assertEquals( $message, $actual->message );
 		$this->assertEquals( $level, $actual->level );
-		$this->assertEquals( new Record( $message, $level ), $actual );
+		$this->assertEquals( new Record( $message, $level, $actual->time ), $actual );
 	}
 	
 	public static function toStringProvider( ) : array {
+		$time = new \DateTime;
+		$timeStr = $time->format( 'c' );
+		
 		return [
-			[ 'error message',		Record::LVL_ERROR,		'[ERROR] error message'		],
-			[ 'warning message',	Record::LVL_WARNING,	'[WARNING] warning message'	],
-			[ 'info message',		Record::LVL_INFO,		'[INFO] info message'		],
-			[ 'debug message',		Record::LVL_DEBUG,		'[DEBUG] debug message'		]
+			[ 'error message',		Record::LVL_ERROR,		$time, '['.$timeStr.'][ERROR] error message'		],
+			[ 'warning message',	Record::LVL_WARNING,	$time, '['.$timeStr.'][WARNING] warning message'	],
+			[ 'info message',		Record::LVL_INFO,		$time, '['.$timeStr.'][INFO] info message'			],
+			[ 'debug message',		Record::LVL_DEBUG,		$time, '['.$timeStr.'][DEBUG] debug message'		]
 		];
 	}
 	
@@ -43,7 +46,7 @@ class RecordTests extends TestCase {
 	 * Testing convert to string
 	 */
 	#[ DataProvider( 'toStringProvider' ) ]
-	public function testToString( string $message, int $level, string $expected ) : void {
-		$this->assertEquals( $expected, ( string ) new Record( $message, $level ) );
+	public function testToString( string $message, int $level, \DateTime $time, string $expected ) : void {
+		$this->assertEquals( $expected, ( string ) new Record( $message, $level, $time ) );
 	}
 }

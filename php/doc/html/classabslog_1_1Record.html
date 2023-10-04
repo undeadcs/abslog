@@ -98,9 +98,9 @@ Collaboration diagram for abslog\Record:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a100005c85774cc1aeb18b2a39a818d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a100005c85774cc1aeb18b2a39a818d28">__construct</a> (string $message, int $level=self::LVL_INFO)</td></tr>
-<tr class="memdesc:a100005c85774cc1aeb18b2a39a818d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classabslog_1_1Record.html#a100005c85774cc1aeb18b2a39a818d28">More...</a><br /></td></tr>
-<tr class="separator:a100005c85774cc1aeb18b2a39a818d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa79ff073e6e2148f0b123bf8a6755b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a7fa79ff073e6e2148f0b123bf8a6755b">__construct</a> (string $message, int $level=self::LVL_INFO, \DateTime $time=new \DateTime)</td></tr>
+<tr class="memdesc:a7fa79ff073e6e2148f0b123bf8a6755b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classabslog_1_1Record.html#a7fa79ff073e6e2148f0b123bf8a6755b">More...</a><br /></td></tr>
+<tr class="separator:a7fa79ff073e6e2148f0b123bf8a6755b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a76d6b61907a9a5847d355dbb88264e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#a9a76d6b61907a9a5847d355dbb88264e">__toString</a> ()</td></tr>
 <tr class="memdesc:a9a76d6b61907a9a5847d355dbb88264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic method for casting to string.  <a href="classabslog_1_1Record.html#a9a76d6b61907a9a5847d355dbb88264e">More...</a><br /></td></tr>
 <tr class="separator:a9a76d6b61907a9a5847d355dbb88264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,12 +143,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad4b74ce2a35d663b9123c1ae83757c3f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#ad4b74ce2a35d663b9123c1ae83757c3f">$message</a> = ''</td></tr>
 <tr class="memdesc:ad4b74ce2a35d663b9123c1ae83757c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message.  <a href="classabslog_1_1Record.html#ad4b74ce2a35d663b9123c1ae83757c3f">More...</a><br /></td></tr>
 <tr class="separator:ad4b74ce2a35d663b9123c1ae83757c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85886fd84952d4875894cfdd5400a9e"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classabslog_1_1Record.html#ae85886fd84952d4875894cfdd5400a9e">$time</a> = null</td></tr>
+<tr class="memdesc:ae85886fd84952d4875894cfdd5400a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of creation.  <a href="classabslog_1_1Record.html#ae85886fd84952d4875894cfdd5400a9e">More...</a><br /></td></tr>
+<tr class="separator:ae85886fd84952d4875894cfdd5400a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classabslog_1_1Record.html" title="Record in log.">Record</a> in log. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a100005c85774cc1aeb18b2a39a818d28" name="a100005c85774cc1aeb18b2a39a818d28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a100005c85774cc1aeb18b2a39a818d28">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a7fa79ff073e6e2148f0b123bf8a6755b" name="a7fa79ff073e6e2148f0b123bf8a6755b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa79ff073e6e2148f0b123bf8a6755b">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +166,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$level</em> = <code>self::LVL_INFO</code>&#160;</td>
+          <td class="paramname"><em>$level</em> = <code>self::LVL_INFO</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">\DateTime&#160;</td>
+          <td class="paramname"><em>$time</em> = <code>new&#160;\DateTime</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -178,6 +187,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>Level </td></tr>
+    <tr><td class="paramtype">\DateTime</td><td class="paramname">$time</td><td>Time of creation </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,6 +424,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Message. </p>
+
+</div>
+</div>
+<a id="ae85886fd84952d4875894cfdd5400a9e" name="ae85886fd84952d4875894cfdd5400a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85886fd84952d4875894cfdd5400a9e">&#9670;&nbsp;</a></span>$time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime abslog\Record::$time = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time of creation. </p>
 
 </div>
 </div>
