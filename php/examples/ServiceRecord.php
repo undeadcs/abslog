@@ -38,8 +38,8 @@ class ServiceRecord extends Record {
 	 */
 	public string $name = '';
 	
-	public function __construct( string $message, int $level = self::LVL_INFO, int $category = self::CATEGORY_MESSAGE, string $host = '', int $pid = 0, string $name = '' ) {
-		parent::__construct( $message, $level );
+	public function __construct( string $message, int $level = self::LVL_INFO, \DateTime $time = new \DateTime, int $category = self::CATEGORY_MESSAGE, string $host = '', int $pid = 0, string $name = '' ) {
+		parent::__construct( $message, $level, $time );
 		
 		$this->host     = $host;
 		$this->pid      = $pid;
@@ -51,6 +51,6 @@ class ServiceRecord extends Record {
 	 * Magic method for casting to string
 	 */
 	public function __toString( ) : string {
-		return '['.self::LevelToString( $this->level ).']['.$this->host.']['.$this->pid.']['.$this->name.']['.$this->category.'] '.$this->message;
+		return '['.$this->time->format( 'c' ).']['.self::LevelToString( $this->level ).']['.$this->host.']['.$this->pid.']['.$this->name.']['.$this->category.'] '.$this->message;
 	}
 }
